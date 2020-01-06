@@ -1,0 +1,53 @@
+body {
+    background-color: #6e97aa;
+}
+
+#head h1 {
+	text-align: center;
+}
+
+#head ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#head li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+#head li button {
+	display: block;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border: none;
+}
+
+#head li button:hover {
+	background-color: #111;
+}
+
+#head li button.active {
+	background-color: #4CAF50;
+}
+
+#content {
+	display: flex;
+	justify-content: center;
+}
+
+#content section {
+	padding: 8px;
+	margin: 8px;
+	border-style: solid;
+	border-radius: 5px;
+	width: 1300px;
+	height: 1500px;
+	background-color: #a4cdeb;
+}

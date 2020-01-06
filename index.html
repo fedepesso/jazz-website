@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sito sulla musica jazz</title>
+		<link rel="stylesheet" type="text/css" href="./style/index.css">
+		<script>
+			function change_main_content(file) {
+				document.getElementById("main").innerHTML = "";
+				document.getElementById("main").innerHTML = `<object type="text/html" data=${file} height="100%" width="100%"></object>`;
+				console.log(file);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="head">
+			<header>
+				<h1><i>Il jazz</i></h1>
+			</header>
+			<nav>
+				 <ul>
+					 <li><button onclick="change_main_content('./content/home.html')"><i>Home</i></button></li>
+					 <li><button onclick="change_main_content('./content/history.html')"><i>Storia</i></button></li>
+				  <li><button onclick="change_main_content('./content/subgenres.html')"><i>Sottogeneri</i></button></li>
+				  <li><button onclick="change_main_content('./content/artists.html')"><i>Artisti</i></button></li>
+				  <li style="float:right"><button onclick="change_main_content('./content/about.html')"><i>About</i></button></li>
+				</ul> 
+			</nav>
+		</div>
+		
+		<div id="content">
+			<section id="main">
+			</section>
+		</div>
+		
+		<script>change_main_content('./content/home.html')</script>
+	</body>
+</html>
